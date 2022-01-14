@@ -31,7 +31,7 @@ def game_on():
     screen.onkey(player.move_up, "w")
 
     screen.listen()
-    """pass """
+    """Infinite loop below turns our game in motion """
     while game_is_on:
         "slowing down our game"
         time.sleep(delay)
@@ -56,7 +56,7 @@ def game_on():
                             car.hideturtle()
                     board.game_over()
                     game_is_on = False
-                    
+
                     """Binding 'choice' keys"""
                     screen.onkey(screen.bye, "Escape")
                     screen.onkey(next_round, "space")
